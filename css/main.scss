@@ -1,0 +1,902 @@
+body{
+    background:rgb(214, 55, 55);
+}
+    h2{
+        text-transform: capitalize;
+        font-size: large;
+        font-style: italic ;
+        border:1px solid white;
+        letter-spacing: 2px;
+        width: 50%;
+        text-align:center;
+        margin: auto;
+        margin-bottom:5px;
+        color: rgb(214, 201, 13);
+    }
+    .mobile-logo{
+        display:none;
+    }
+        #id{
+            background-color: rgb(104, 104, 238);
+            /* clip-path:polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0) ; */
+            width: 100%;
+        overflow: hidden;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+    #mySidenav{
+        display: none;
+    }
+    /* The side navigation menu */
+    .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 3; /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+    
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+    }
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      /* When you mouse over the container, fade in the overlay title */
+      .container:hover .overlay {
+        opacity: 1;
+      }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover, .offcanvas a:focus{
+        color: #f1f1f1;
+    }
+    .openbtn{
+        display:none;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: 46px !important;
+        margin-left: 50px;
+    }
+    .cart-overlay{ position: fixed; 
+        top:0;
+         right:0; 
+         width:250px;
+         height: 100%; 
+         padding: 1.5rem; 
+         transition: all 0.3s linear ; -webkit-transition: all 0.3s linear ; -moz-transition: all 0.3s linear ; -ms-transition: all 0.3s linear ; -o-transition: all 0.3s linear ;
+        background-color: white;
+        z-index: 2;
+        visibility: hidden;
+    }
+    .cart{
+        position: fixed;
+        top:0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        z-index: 3;
+        background: yellowgreen;
+    
+        font-size: 30px;
+    
+        transition:all 0.3s linear  ;
+        -webkit-transition:all 0.3s linear  ;
+        -moz-transition:all 0.3s linear  ;
+        -ms-transition:all 0.3s linear  ;
+        -o-transition:all 0.3s linear  ;
+        /* transform: translateX(100%) ;
+        -webkit-transform: translateX(100%) ;
+        -moz-transform: translateX(100%) ;
+        -ms-transform: translateX(100%) ;
+        -o-transform: translateX(100%) ; */
+    }
+    
+    /* Style page content - use ths if you want to push the page content to the right when you open the side navigation */
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+    }
+    .text-lg{
+        color: rgb(227, 238, 238);
+       font-size: 45px; 
+    }
+    .p-tab1{
+        
+        color: rgb(226, 226, 238);
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    .tabs{
+        /* background-color: rgb(35, 36, 35); */
+        padding-top: 1rem;
+        border-bottom: 3px solid rgb(14, 13, 13);
+        position:sticky;  
+          top:0;
+         right:0; 
+         width:100%;
+         
+      
+    }
+    
+    .container  button.tab-border{
+        border-bottom:2px solid rgb(209, 15, 15);
+    }
+    .container button{
+        margin-left: 2px;
+        width: 10rem;
+        font-size: 1.1rem;
+        background-color: none;
+        outline: none;
+        border: none;
+        background: none;
+        color: rgb(230, 236, 236);
+    
+    }
+    
+    
+    .container{
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+        text-align: center;
+        list-style: none;
+    }
+    ul li{
+        list-style: none;
+        font-size: 30px;
+    }
+    .heading-about{
+       font-size: 43px;
+    }
+    
+    .p-about{
+        font-size: 40px;
+        font-style: italic;
+    }
+    .skill-btn{
+        font-size: 50px;
+    }
+    
+    /*     */
+    .tab-content{
+         padding:3rem 0;
+         color:white;
+         /* background-color: black ; */
+    }
+    #tab-1-content
+    {
+        display:none;
+       
+    }
+    #tab-2-content,
+    #tab-3-content,
+    #tab-4-content,
+    #tab-5-content,
+    #tab-6-content,
+    #tab-7-content,
+    #tab-8-content,
+    #tab-9-content
+    {
+        display:none;
+    }
+    .show{
+        display:block !important;
+    }
+    .homepageimg{
+        width:60%;
+    }
+    #tab-1-content .tab-1-content-inner{
+        display:grid;
+        /* grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: 2fr 1fr;
+          grid-gap:  2rem;
+          align-items: center;
+          justify-content: center  ;
+          text-align: center;
+          
+       }
+       #tab-2-content .tab-2-content-top{
+           display:grid;
+           grid-template-columns:2fr 1fr;
+           grid-gap  :1rem;
+           align-items: center;
+          justify-content: center  ; 
+       }
+       #tab-2-content .tab-2-content-bottom .product-center {
+           display:grid;
+           grid-template-columns:repeat(3, 1fr);
+           grid-gap  :2rem;
+           align-items: center;
+          justify-content: center  ; 
+          text-align: center ;
+       }
+       .img-box{
+           border:2px solid black;
+       }
+       #myImg{
+    padding-top: 3px;
+       }
+        .dark-mode {
+        
+        background-color: rgb(14, 150, 32);
+        color: rgb(245, 239, 239);
+        font-size: 85px;
+      }
+    .right{
+        width:85%;
+        background-color: rgb(255, 196, 0);
+        float: right;
+        height: 1200px;
+        text-align: center;
+        transition: 0.7s;
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+        -o-transition: 0.7s;
+    }
+   
+    .slideshow-container {
+        /* max-width: 100%;
+        position: relative;
+        margin: auto */
+    margin-top:600px;
+    position: relative;
+    width: 100%;
+    }
+    
+    .mySlides {
+        display: none;
+      margin-left: 120px;
+      width: 80%;
+    
+    
+      /* border: solid 1px black; */
+         
+    }
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 90%;
+        width: auto;
+        margin-top: -12px;
+        padding: 16px;
+        color: #222428;
+        font-weight: bold;
+        font-size: 30px;
+        transition: .6s ease;
+        border-radius: 0 3px 3px 0
+    }
+    
+    .next {
+        right: 50px;
+        top: 250px;
+        border-radius: 3px 3px 3px 3px
+    }
+    
+    .prev {
+        left: 50px;
+        top: 250px;
+        border-radius: 3px 3px 3px 3px
+    }
+    
+    .prev:hover,
+    .next:hover {
+        color: #f2f2f2;
+        background-color: rgba(0, 0, 0, 0.8)
+    }
+    
+    .text {
+        color: #d47979;
+        font-size: 35px;
+        padding-top: 12px;
+      padding-bottom: 12px;
+        position: absolute;
+        top: 800px;
+        overflow: hidden;
+        margin: auto;
+        border: 1px solid black;
+        width: 90%;
+        text-align: center;
+        /* background-color: #222428 */
+    }
+    
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    
+    .dot {
+       position: relative;
+        bottom: -60px;
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        margin: 0 2px;
+        background-color: rgb(219, 214, 214);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color .6s ease
+    }
+    
+    .active, .dot:hover {
+        background-color: #320ed3
+    }
+    
+      
+    
+    .second-tabs{
+        //  background-color: rgb(16, 116, 16); 
+        overflow:hidden;
+        padding-top: 15rem;
+        margin-top: 5rem;
+        
+     
+         
+    }
+    .second-tabs .container{
+        display:grid;
+        
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap:1rem;
+        justify-content: center;
+        align-items:center;
+        text-align:center;
+       
+    }
+    .second-tabs p{
+        font-size: 1.3rem;
+        padding-top:0.5rem;
+        
+    }
+    .second-tabs .container > div{
+        padding:1.5em 0;
+    }
+    .second-tabs .container > div:hover{
+        color: rgb(245, 239, 239);
+        cursor:pointer;
+    }
+    .second-tab-border{
+        border-bottom:3px solid rgb(212, 205, 205);
+    }   
+    .second-tab-content{
+         padding:3rem 0;
+         color:white;
+         /* background-color: black ; */
+    }
+    #second-tab-1-content,
+    #second-tab-2-content,
+    #second-tab-3-content,
+    #second-tab-4-content
+    {
+        display:none;
+        border:1px solid black;
+     padding:5px;
+    }
+    .second-show{
+        display:block !important;
+    }
+    #second-tab-1-content .second-tab-1-content-bottom .product-center {
+       display:grid;
+       grid-template-columns:repeat(3, 1fr);
+       grid-gap  :4rem;
+       align-items: center;
+      justify-content: center  ; 
+      text-align: center ;
+       }
+     
+       #second-tab-2-content .second-tab-2-content-bottom .product-center{
+           display:grid;
+           grid-template-columns:repeat(3, 1fr);
+           grid-gap  :2rem;
+           align-items: center;
+          justify-content: center  ; 
+          text-align: center ;
+       }
+       #second-tab-3-content .second-tab-3-content-bottom .product-center {
+           display:grid;
+           grid-template-columns:repeat(3, 1fr);
+           grid-gap  :2rem;
+           align-items: center;
+          justify-content: center  ; 
+          text-align: center ;
+       }
+       #second-tab-4-content .second-tab-4-content-bottom .product-center{
+           display:grid;
+           grid-template-columns:repeat(3, 1fr);
+           grid-gap  :2rem;
+           align-items: center;
+          justify-content: center  ; 
+          text-align: center ;
+       }
+       #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    #myImg:hover {opacity: 0.7;}
+    
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 3; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+    
+    /* Modal Content (Image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+    
+    /* Add Animation - Zoom in the Modal */
+    .modal-content, #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    .img-box{
+        position: relative;
+        overflow: hidden;
+        margin-left: 0px;
+    }
+    .img-box:hover .bag-btn{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    } 
+       .footer{
+        max-width:75%;
+        margin:1rem auto;
+        overflow: auto;
+       
+    } 
+       
+    
+        .footer p{
+            margin-bottom:1.5rem;
+            font-size: 30px;
+            text-align: center;
+            color:white;
+        }
+        .footer span{
+           color :red;
+    
+           font-style: italic;
+        }
+        /* .home-intro {
+           color 
+           
+          } */
+      
+     @media(max-width:700px){
+         /* body{
+        background: blue;
+         } */
+        #id{
+            background-color: tomato;
+            top:0;
+        }
+        #mySidenav{
+         display: block;
+     }
+        #main {
+         transition: margin-left .5s;
+         padding: 20px;
+         -webkit-transition: margin-left .5s;
+         -moz-transition: margin-left .5s;
+         -ms-transition: margin-left .5s;
+         -o-transition: margin-left .5s;
+    }
+     .container button{
+         margin-left: 90px;
+         width: 13rem;
+         font-size: 1.4rem;
+         
+     }
+     .tab-item{
+         display: block;
+         margin-top: 20px;
+         width: 100%;
+         font-size: 20px;
+         height: 40px;
+     }
+        .tabs{
+         
+         padding-top: 1rem;
+         border-bottom: 3px solid rgb(14, 13, 13);
+     position: absolute;
+     }
+     .tabs .container{
+         display:inline-block;
+     }
+     .tab-content{
+         padding:3rem 0;
+         width: 100%;
+         height: 700px;
+         position: relative;
+         
+         color:white;
+         /* background: rgb(42, 35, 100) ; */
+     }
+     .tabs .container{
+         display: none;
+     }
+     .container{
+         width: 100%;
+         margin: auto;
+         padding-top: 20px;
+         text-align: center;
+         list-style: none;
+     }
+       
+     .contact-right{
+     float: none;
+     position: relative;
+     top: 200px;
+     right: 100px;
+     } 
+     .contact-left{
+         float: none;
+       width: 90%;
+          position: absolute;
+         line-height: 40px;
+         left: 20px;
+     
+     }
+     .heading-about{
+         font-size: 43px;
+      }
+      .text-lg{
+        color: rgb(227, 238, 238);
+       font-size: 30px; 
+    }
+    .p-tab1{
+        
+        color: rgb(226, 226, 238);
+        text-align: center;
+        font-size: 45px;
+    }
+      .p-about{
+          font-size: 20px;
+          font-style: italic;
+      }
+      .skill-btn{
+          font-size: 50px;
+      }
+     
+     .openbtn{
+         display:block;
+     }
+     .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+    margin-top:300px;
+    position: relative;
+    
+    }
+    
+    .mySlides {
+        display: none;
+      margin-left: 0px;
+      padding-top:20px;
+      width: 100%;
+    
+    
+      /* border: solid 1px black; */
+         
+    }
+    
+    .text {
+        color: #d47979;
+        font-size: 35px;
+        padding-top: 12px;
+      padding-bottom: 12px;
+        position: absolute;
+        top: 35rem;
+        overflow: hidden;
+        margin: auto;
+        border: 1px solid black;
+        width: 70%;
+        text-align: center;
+        /* background-color: #222428 */
+    }
+    .next {
+        right: 20px;
+        top: 250px;
+        border-radius: 3px 3px 3px 3px
+    }
+    
+    .prev {
+        left: 20px;
+        top: 250px;
+        border-radius: 3px 3px 3px 3px;
+        -webkit-border-radius: 3px 3px 3px 3px;
+        -moz-border-radius: 3px 3px 3px 3px;
+        -ms-border-radius: 3px 3px 3px 3px;
+        -o-border-radius: 3px 3px 3px 3px;
+    }
+    .dot {
+        position: relative;
+         bottom: -60px;
+         cursor: pointer;
+         height: 25px;
+         width: 25px;
+         margin: 0 2px;
+         background-color: rgb(219, 214, 214);
+         border-radius: 50%;
+         display: inline-block;
+         transition: background-color .6s ease
+     }
+     .active, .dot:hover {
+        background-color: #d30e0e
+    }
+     .second-tabs{
+    
+        padding-top: 1rem;
+        margin-top: 6rem;
+       
+         width: 950px;
+         color:rgb(37, 231, 79);
+    }
+    
+    
+       .second-tabs .container{
+        display:grid;
+        width:100%;
+       color:rgb(51, 35, 141);
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items:center;
+        text-align:center;
+        margin-left: 1px;
+        margin-right:40px;
+        width: 200px !important;
+    }
+    
+    .second-tabs .container {
+        width:600px !important;
+        
+    }
+     
+     #second-tab-1-content .second-tab-1-content-bottom, #second-tab-3-content .second-tab-3-content-bottom,  #second-tab-4-content .second-tab-4-content-bottom, #second-tab-2-content .second-tab-2-content-bottom{
+            
+        display:grid;
+        grid-template-columns:  1fr;
+       margin-top: 50px;
+        display:block;
+        text-align:center;
+    
+        
+       }
+       .second-tab-1-content-bottom >div,
+       .second-tab-2-content-bottom >div,
+       .second-tab-3-content-bottom >div,
+       .second-tab-4-content-bottom >div{
+           margin-top:10px;
+       }
+       #myImg{
+           width:80%;
+       }
+      
+        }
+        
+        @media(min-width:687px){
+            /* body{
+                background:purple;
+            } */
+          
+            #second-tab-1-content .second-tab-1-content-bottom,
+            #second-tab-2-content .second-tab-2-content-bottom,
+            #second-tab-3-content .second-tab-3-content-bottom,
+            #second-tab-4-content .second-tab-4-content-bottom
+    
+            {
+                display:grid;
+                grid-template-columns:repeat(3, 1fr);
+                grid-gap  :2rem;
+                align-items: center;
+               justify-content: center  ; 
+               text-align: center ;
+                }
+        }
+      
+        
+        @media (max-width: 1276px){
+            /* body{
+                background:orange;
+               } */
+               .mobile-logo
+               {
+           color:white;
+           float:right;
+           padding-top:20px;
+           font-size:30px;
+           display:block;
+               }
+               .container  button.tab-border{
+                border-bottom:2px solid rgb(209, 15, 15);
+            }
+            .container button{
+                margin-left:120px;
+                width: 3rem;
+                font-size: 1.2rem;
+                background-color: none;
+                outline: none;
+                border: none;
+                background: none;
+                color: rgb(230, 236, 236);
+            
+            }
+               #second-tab-1-content .second-tab-1-content-bottom,
+            #second-tab-2-content .second-tab-2-content-bottom,
+            #second-tab-3-content .second-tab-3-content-bottom,
+            #second-tab-4-content .second-tab-4-content-bottom
+    
+            {
+                display:grid;
+                grid-template-columns:repeat(2, 1fr);
+                grid-gap  :2rem;
+                align-items: center;
+               justify-content: center  ; 
+               text-align: center ;
+                }
+        }
+        @media (max-width: 959px){
+            /* body{
+                background:blue;
+               } */
+               .slideshow-container {
+                max-width: 100%;
+                position: relative;
+                margin: auto;
+            margin-top:300px;
+            position: relative;
+            
+            }
+            
+            .mySlides {
+                display: none;
+              margin-left: 0px;
+              padding-top:20px;
+              width: 100%;
+            
+            
+              /* border: solid 1px black; */
+                 
+            }
+               .container  button.tab-border{
+                border-bottom:2px solid rgb(209, 15, 15);
+            }
+            .container button{
+                margin-left:80px;
+                width: 2rem;
+                font-size: 1.2rem;
+                background-color: none;
+                outline: none;
+                border: none;
+                background: none;
+                color: rgb(230, 236, 236);
+            
+            }
+               #second-tab-1-content .second-tab-1-content-bottom,
+            #second-tab-2-content .second-tab-2-content-bottom,
+            #second-tab-3-content .second-tab-3-content-bottom,
+            #second-tab-4-content .second-tab-4-content-bottom
+    
+            {
+                display:grid;
+                grid-template-columns:repeat(1, 1fr);
+                grid-gap  :2rem;
+                align-items: center;
+               justify-content: center  ; 
+               text-align: center ;
+                }
+                #myImg{
+                    width:80%;
+                }
+                .footer{
+                    max-width:75%;
+                    margin:1rem auto;
+                    overflow: auto;
+                   
+                } 
+                   
+                
+                    .footer p{
+                        margin-bottom:1.5rem;
+                        font-size: 30px;
+                        text-align: center;
+                        color:black;
+                    }
+                    .footer span{
+                       color :red;
+                
+                       font-style: italic;
+                    }
+        }
+       
