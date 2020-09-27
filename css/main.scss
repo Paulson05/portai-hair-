@@ -1,5 +1,6 @@
 body{
     background:rgb(214, 55, 55);
+   
 }
     h2{
         text-transform: capitalize;
@@ -77,6 +78,7 @@ body{
     }
     .openbtn{
         display:none;
+        cursor: pointer;
     }
     
     /* Position and style the close button (top right corner) */
@@ -86,6 +88,7 @@ body{
         right: 5px;
         font-size: 46px !important;
         margin-left: 50px;
+        cursor: pointer;
     }
     .cart-overlay{ position: fixed; 
         top:0;
@@ -106,10 +109,9 @@ body{
         height: 100%;
         overflow: scroll;
         z-index: 3;
-        background: yellowgreen;
-    
+        background:black;
         font-size: 30px;
-    
+        opacity:0.9;
         transition:all 0.3s linear  ;
         -webkit-transition:all 0.3s linear  ;
         -moz-transition:all 0.3s linear  ;
@@ -121,7 +123,87 @@ body{
         -ms-transform: translateX(100%) ;
         -o-transform: translateX(100%) ; */
     }
-    
+    .cart-item{
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto 1fr auto;
+        // grid-column-gap: 0 0;
+        margin: 3rem 0;
+        }
+        .cart-item img{
+            width:400px;
+            height:400px;
+        
+        }
+        .close-cart{
+            font-size: 3.7rem;
+            position: sticky !important;
+            color: rgb(209, 125, 22);
+            margin-left: -1200px;
+            cursor: pointer;
+           
+        }
+        .cart h2{
+            text-align: center;
+            text-transform: capitalize;
+            margin-bottom: 2rem;
+            letter-spacing: 0.2rem;
+        }
+        .cart-item h4{
+            font-size: 1.25rem;
+            text-transform: capitalize;
+        }
+        .cart-item h5{
+           margin: 0.1rem;
+           letter-spacing:  0.3rem;
+        }
+        .cart-footer{
+            margin-top:2rem;
+            letter-spacing: 0.1rem;
+            text-align: center;
+        }
+        .cart-footer h3{
+            text-transform: capitalize;
+            margin-bottom: 1rem;
+        }
+        .item-amout{
+            text-align:center;
+        
+        }
+        .remove-item{
+            color:red;
+            cursor: pointer;
+        }
+    .showcart{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        /* -o-transform: translateX(0); */
+    }
+    .banner-btn{
+        padding: 1rem 3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-size: 1rem;
+        background-color: rgb(71, 70, 70);
+        color: rgb(230, 229, 236);
+        border: 1px solid yellowgreen;
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+     }
+     
+     .banner-btn:hover{
+          background: transparent;
+          color: rgb(93, 64, 224);
+     }
+    .transparentbcg{
+        visibility: visible;
+        
+    }
     /* Style page content - use ths if you want to push the page content to the right when you open the side navigation */
     #main {
         transition: margin-left .5s;
@@ -144,8 +226,8 @@ body{
         .sidenav a {font-size: 18px;}
     }
     .tabs{
-        /* background-color: rgb(35, 36, 35); */
-        padding-top: 1rem;
+        background:black;
+        padding-top: 1rem  rgb(240, 234, 234);
         border-bottom: 3px solid rgb(14, 13, 13);
         position:sticky;  
           top:0;
@@ -899,4 +981,137 @@ body{
                        font-style: italic;
                     }
         }
-       
+        @media(min-width:687px){
+            /* body{
+                background:purple;
+            } */
+          
+            #second-tab-1-content .second-tab-1-content-bottom,
+            #second-tab-2-content .second-tab-2-content-bottom,
+            #second-tab-3-content .second-tab-3-content-bottom,
+            #second-tab-4-content .second-tab-4-content-bottom
+    
+            {
+                display:grid;
+                grid-template-columns:repeat(3, 1fr);
+                grid-gap  :2rem;
+                align-items: center;
+               justify-content: center  ; 
+               text-align: center ;
+                }
+        }
+      
+        
+        @media (max-width: 1276px){
+            /* body{
+                background:orange;
+               } */
+               .mobile-logo
+               {
+           color:white;
+           float:right;
+           padding-top:20px;
+           font-size:30px;
+           display:block;
+               }
+               .container  button.tab-border{
+                border-bottom:2px solid rgb(209, 15, 15);
+            }
+            .container button{
+                margin-left:120px;
+                width: 3rem;
+                font-size: 1.2rem;
+                background-color: none;
+                outline: none;
+                border: none;
+                background: none;
+                color: rgb(230, 236, 236);
+            
+            }
+               #second-tab-1-content .second-tab-1-content-bottom,
+            #second-tab-2-content .second-tab-2-content-bottom,
+            #second-tab-3-content .second-tab-3-content-bottom,
+            #second-tab-4-content .second-tab-4-content-bottom
+    
+            {
+                display:grid;
+                grid-template-columns:repeat(2, 1fr);
+                grid-gap  :2rem;
+                align-items: center;
+               justify-content: center  ; 
+               text-align: center ;
+                }
+        }
+        @media (max-width: 959px){
+            /* body{
+                background:blue;
+               } */
+               .slideshow-container {
+                max-width: 100%;
+                position: relative;
+                margin: auto;
+            margin-top:300px;
+            position: relative;
+            
+            }
+            
+            .mySlides {
+                display: none;
+              margin-left: 0px;
+              padding-top:20px;
+              width: 100%;
+            
+            
+              /* border: solid 1px black; */
+                 
+            }
+               .container  button.tab-border{
+                border-bottom:2px solid rgb(209, 15, 15);
+            }
+            .container button{
+                margin-left:80px;
+                width: 2rem;
+                font-size: 1.2rem;
+                background-color: none;
+                outline: none;
+                border: none;
+                background: none;
+                color: rgb(230, 236, 236);
+            
+            }
+               #second-tab-1-content .second-tab-1-content-bottom,
+            #second-tab-2-content .second-tab-2-content-bottom,
+            #second-tab-3-content .second-tab-3-content-bottom,
+            #second-tab-4-content .second-tab-4-content-bottom
+    
+            {
+                display:grid;
+                grid-template-columns:repeat(1, 1fr);
+                grid-gap  :2rem;
+                align-items: center;
+               justify-content: center  ; 
+               text-align: center ;
+                }
+                #myImg{
+                    width:80%;
+                }
+                .footer{
+                    max-width:75%;
+                    margin:1rem auto;
+                    overflow: auto;
+                   
+                } 
+                   
+                
+                    .footer p{
+                        margin-bottom:1.5rem;
+                        font-size: 30px;
+                        text-align: center;
+                        color:black;
+                    }
+                    .footer span{
+                       color :red;
+                
+                       font-style: italic;
+                    }
+        }
