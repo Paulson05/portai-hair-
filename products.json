@@ -3,90 +3,90 @@
                 {
                     "sys": {"id":"1"},
                     "fields": {
-                        "title": "mock up1",
-                        "price":12.08,
-                        "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                        "title": " 16-20inch brazilain hair",
+                        "price":30000,
+                        "image":{"fields":{"file":{"url":"images/b1.jpg"}}}
                             
                         }
                     },
             {
                 "sys": {"id":"2"},
                 "fields": {
-                    "title": "mock up2",
-                    "price":13.08,
-                    "image":{"fields":{"file":{"url":"images/shoe5.jpg"}}}
+                    "title": "26inch  brazilain hair",
+                    "price":120000,
+                    "image":{"fields":{"file":{"url":"images/b2.jpg"}}}
                         
                     }
                 },
                 {
                     "sys": {"id":"3"},
                     "fields": {
-                        "title": "mock up3",
-                        "price":14.08,
-                        "image":{"fields":{"file":{"url":"images/shoe4.jpg"}}}
+                        "title": "curly wave",
+                        "price":55000,
+                        "image":{"fields":{"file":{"url":"images/b3.jpg"}}}
                             
                         }
                     },
                 {
                     "sys": {"id":"4"},
                     "fields": {
-                        "title": "mock up4",
-                        "price":15.08,
-                        "image":{"fields":{"file":{"url":"images/p5.jpg"}}}
+                        "title": "i6 inch brazilaan hair",
+                        "price":45000,
+                        "image":{"fields":{"file":{"url":"images/b4.jpg"}}}
                             
                         }
                     },
                     {
                         "sys": {"id":"5"},
                         "fields": {
-                            "title": "mock up5",
-                            "price":16.08,
-                            "image":{"fields":{"file":{"url":"images/w3.jpg"}}}
+                            "title": "18 inch braizilian hair",
+                            "price":63000,
+                            "image":{"fields":{"file":{"url":"images/b6.jpg"}}}
                                 
                             }
                         },
                 {
                     "sys": {"id":"6"},
                     "fields": {
-                        "title": "mock up6",
-                        "price":17.08,
-                        "image":{"fields":{"file":{"url":"images/p2.jpg"}}}
+                        "title": "20 inch ",
+                        "price":79000,
+                        "image":{"fields":{"file":{"url":"images/b9.jpg"}}}
                             
                         }
                     },
                     {
                         "sys": {"id":"7"},
                         "fields": {
-                            "title": "mock up7",
-                            "price":18.08,
-                            "image":{"fields":{"file":{"url":"images/download.png"}}}
+                            "title": "18 inch",
+                            "price":63000,
+                            "image":{"fields":{"file":{"url":"images/b7.jpg"}}}
                                 
                             }
                         },
                         {
                             "sys": {"id":"8"},
                             "fields": {
-                                "title": "mock up8",
-                                "price":19.08,
-                                "image":{"fields":{"file":{"url":"images/shoe2.jpg"}}}
+                                "title": "16 inch ",
+                                "price":62000,
+                                "image":{"fields":{"file":{"url":"images/b8.jpg"}}}
                                     
                                 }
                             },
                 {
                     "sys": {"id":"9"},
                     "fields": {
-                        "title": "mock up8",
-                        "price":19.08,
-                        "image":{"fields":{"file":{"url":"images/w2.jpg"}}}
+                        "title": "i8 inch",
+                        "price":73000,
+                        "image":{"fields":{"file":{"url":"images/b9.jpg"}}}
                             
                         }
                     },
             {
             "sys": {"id":"10"},
             "fields": {
-            "title": "mock up8",
-            "price":19.08,
-            "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+            "title": "16 inch closure",
+            "price":23000,
+            "image":{"fields":{"file":{"url":"images/c2.jpg"}}}
                 
             }
             },
@@ -95,114 +95,114 @@
             "fields": {
                 "title": "mock up8",
                 "price":19.08,
-                "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                "image":{"fields":{"file":{"url":"images/c3.jpg"}}}
                     
                 }
             },
             {
                 "sys": {"id":"12"},
                 "fields": {
-                    "title": "mock up8",
-                    "price":19.08,
-                    "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                    "title": " wine colour closure",
+                    "price":45000,
+                    "image":{"fields":{"file":{"url":"images/c8.jpg"}}}
                         
                     }
                 },
                 {
                     "sys": {"id":"13"},
                     "fields": {
-                        "title": "mock up8",
-                        "price":19.08,
-                        "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                        "title": "22 inch closure",
+                        "price":97000,
+                        "image":{"fields":{"file":{"url":"images/c9.jpg"}}}
                             
                         }
                     },
             {
             "sys": {"id":"14"},
             "fields": {
-                "title": "mock up8",
+                "title": "18 inch closure",
                 "price":19.08,
-                "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                "image":{"fields":{"file":{"url":"images/b2.jpg"}}}
                     
                 }
             },
             {
                 "sys": {"id":"15"},
                 "fields": {
-                    "title": "mock up8",
-                    "price":19.08,
-                    "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                    "title": "16 inch closure",
+                    "price":45000,
+                    "image":{"fields":{"file":{"url":"images/c2.jpg"}}}
                         
                     }
                 },
                 {
                     "sys": {"id":"16"},
                     "fields": {
-                        "title": "mock up8",
-                        "price":19.08,
-                        "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                        "title": "18 inch closure",
+                        "price":45000,
+                        "image":{"fields":{"file":{"url":"images/w6.jpg"}}}
                             
                         }
                     },
                     {
                         "sys": {"id":"17"},
                         "fields": {
-                            "title": "mock up8",
-                            "price":19.08,
-                            "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                            "title": "16 inch closure",
+                            "price":39000,
+                            "image":{"fields":{"file":{"url":"images/w7.jpg"}}}
                                 
                             }
                         },
                         {
                             "sys": {"id":"18"},
                             "fields": {
-                                "title": "mock up8",
-                                "price":19.08,
-                                "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                                "title": "curly frontier",
+                                "price":18000,
+                                "image":{"fields":{"file":{"url":"images/w9.jpg"}}}
                                     
                                 }
                             },
                             {
                                 "sys": {"id":"19"},
                                 "fields": {
-                                    "title": "mock up8",
-                                    "price":19.08,
-                                    "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                                    "title": "brazilain hair",
+                                    "price":45000,
+                                    "image":{"fields":{"file":{"url":"images/w9.jpg"}}}
                                         
                                     }
                                 },
                                 {
                                     "sys": {"id":"20"},
                                     "fields": {
-                                        "title": "mock up8",
-                                        "price":19.08,
-                                        "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                                        "title": "curly hair",
+                                        "price":45000,
+                                        "image":{"fields":{"file":{"url":"images/b2.jpg"}}}
                                             
                                         }
                                     },
                                     {
                                         "sys": {"id":"21"},
                                         "fields": {
-                                            "title": "mock up8",
-                                            "price":19.08,
-                                            "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                                            "title": "face cap wig",
+                                            "price":5000,
+                                            "image":{"fields":{"file":{"url":"images/b8.jpg"}}}
                                                 
                                             }
                                         },
                                         {
                                             "sys": {"id":"22"},
                                             "fields": {
-                                                "title": "mock up8",
-                                                "price":19.08,
-                                                "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                                                "title": "gap wig",
+                                                "price": 5000,
+                                                "image":{"fields":{"file":{"url":"images/c2.jpg"}}}
                                                     
                                                 }
                                             },
                                             {
                                                 "sys": {"id":"23"},
                                                 "fields": {
-                                                    "title": "mock up8",
-                                                    "price":19.08,
+                                                    "title": "hair wig ",
+                                                    "price":4500,
                                                     "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
                                                         
                                                     }
@@ -210,17 +210,17 @@
                                                  {
                                             "sys": {"id":"24"},
                                             "fields": {
-                                                "title": "mock up8",
-                                                "price":19.08,
-                                                "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                                                "title": "Ghana wig",
+                                                "price":7000,
+                                                "image":{"fields":{"file":{"url":"images/c9.jpg"}}}
                                                     
                                                 }
                                             },
                                             {
                                                 "sys": {"id":"25"},
                                                 "fields": {
-                                                    "title": "mock up8",
-                                                    "price":19.08,
+                                                    "title": "curly wig",
+                                                    "price":4000,
                                                     "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
                                                         
                                                     }
@@ -228,8 +228,8 @@
                                                 {
                                                     "sys": {"id":"26"},
                                                     "fields": {
-                                                        "title": "mock up8",
-                                                        "price":19.08,
+                                                        "title": "brazillan  wig",
+                                                        "price":7000,
                                                         "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
                                                             
                                                         }
@@ -237,9 +237,9 @@
                                                     {
                                                         "sys": {"id":"27"},
                                                         "fields": {
-                                                            "title": "mock up8",
-                                                            "price":19.08,
-                                                            "image":{"fields":{"file":{"url":"images/w1.jpg"}}}
+                                                            "title": "spanish wig",
+                                                            "price":5000,
+                                                            "image":{"fields":{"file":{"url":"images/c7.jpg"}}}
                                                                 
                                                             }
                                                         }

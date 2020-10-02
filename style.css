@@ -12,6 +12,9 @@ body{
 .mobile-logo{
     display:none;
 }
+nav.mobile-nav .mobile-cart{
+    display:none;
+}
 .fa-bars{
     font-size:30px;
     padding-left: 20px;
@@ -35,9 +38,7 @@ body{
         text-transform: capitalize;
         font-style: italic ;
     }
-    .mobile-logo{
-        display:none;
-    }
+   
         #id{
             background-color: white;
             position: relative;
@@ -114,6 +115,7 @@ body{
         margin-left: 50px;
         cursor: pointer;
     }
+   
     .cart-overlay{ position: fixed; 
         top:0;
          right:0; 
@@ -128,6 +130,7 @@ body{
     .cart{
         position: fixed;
         top:0;
+        display:block;
         right: 0;
         width: 100%;
         height: 100%;
@@ -151,7 +154,7 @@ body{
         display: grid;
         align-items: center;
         grid-template-columns: auto 1fr auto;
-        // grid-column-gap: 0 0;
+        grid-column-gap: 0 0;
         margin: 3rem 0;
         }
         .cart-item img{
@@ -253,7 +256,7 @@ body{
         .sidenav a {font-size: 18px;}
     }
     .tabs{
-        // background:black;
+        background:black;
         padding-top: 1rem  rgb(240, 234, 234);
         border-bottom: 3px solid rgb(14, 13, 13);
         position:sticky;  
@@ -292,13 +295,8 @@ body{
         text-align: center;
         list-style: none;
     }
-    ul li{
-        list-style: none;
-        font-size: 30px;
-    }
-    .heading-about{
-       font-size: 43px;
-    }
+   
+   
     
     .p-about{
         font-size: 20px;
@@ -376,38 +374,15 @@ body{
        #myImg{
     padding-top: 3px;
        }
-        .dark-mode {
-        
-        background-color: rgb(14, 150, 32);
-        color: rgb(245, 239, 239);
-        font-size: 85px;
-      }
-    .right{
-        width:85%;
-        background-color: rgb(255, 196, 0);
-        float: right;
-        height: 1200px;
-        text-align: center;
-        transition: 0.7s;
-        -webkit-transition: 0.7s;
-        -moz-transition: 0.7s;
-        -ms-transition: 0.7s;
-        -o-transition: 0.7s;
-    }
+       
    
-    .slideshow-container {
-        /* max-width: 100%;
-        position: relative;
-        margin: auto */
-    margin-top:600px;
-    position: relative;
-    width: 100%;
-    }
+    
     article{
-        border:2px solid black;
+        border:2px solid rgb(17, 16, 16);
+        width:100%;
     }
     article .bag-btn{
-       border:1px solid rgb(14, 13, 13);
+       border:1px solid rgb(206, 15, 15);
        border-radius: 20px;
        -webkit-border-radius: 20px;
        -moz-border-radius: 20px;
@@ -419,93 +394,11 @@ article .bag-btn:hover{
     background:black;
 }
     
-    .mySlides {
-        display: none;
-      margin-left: 120px;
-      width: 80%;
-    
-    
-      /* border: solid 1px black; */
-         
-    }
-    
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 90%;
-        width: auto;
-        margin-top: -12px;
-        padding: 16px;
-        color: #222428;
-        font-weight: bold;
-        font-size: 30px;
-        transition: .6s ease;
-        border-radius: 0 3px 3px 0
-    }
-    
-    .next {
-        right: 50px;
-        top: 250px;
-        border-radius: 3px 3px 3px 3px
-    }
-    
-    .prev {
-        left: 50px;
-        top: 250px;
-        border-radius: 3px 3px 3px 3px
-    }
-    
-    .prev:hover,
-    .next:hover {
-        color: #f2f2f2;
-        background-color: rgba(0, 0, 0, 0.8)
-    }
-    
-    .text {
-        color: #d47979;
-        font-size: 35px;
-        padding-top: 12px;
-      padding-bottom: 12px;
-        position: absolute;
-        top: 800px;
-        overflow: hidden;
-        margin: auto;
-        border: 1px solid black;
-        width: 90%;
-        text-align: center;
-        /* background-color: #222428 */
-    }
-    
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-    
-    .dot {
-       position: relative;
-        bottom: -60px;
-        cursor: pointer;
-        height: 25px;
-        width: 25px;
-        margin: 0 2px;
-        background-color: rgb(219, 214, 214);
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color .6s ease
-    }
-    
-    .active, .dot:hover {
-        background-color: #320ed3
-    }
     
       
     
     .second-tabs{
-        //  background-color: rgb(16, 116, 16); 
+         /* background-color: rgb(16, 116, 16);  */
         overflow:hidden;
         padding-top: 15rem;
         margin-top: 5rem;
@@ -598,48 +491,7 @@ article .bag-btn:hover{
     
     #myImg:hover {opacity: 0.7;}
     
-    /* The Modal (background) */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 3; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-    }
     
-    /* Modal Content (Image) */
-    .modal-content {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-    }
-    
-    /* Caption of Modal Image (Image Text) - Same Width as the Image */
-    #caption {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-        text-align: center;
-        color: #ccc;
-        padding: 10px 0;
-        height: 150px;
-    }
-    
-    /* Add Animation - Zoom in the Modal */
-    .modal-content, #caption {
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-    }
     .img-box{
         position: relative;
         overflow: hidden;
@@ -678,8 +530,9 @@ article .bag-btn:hover{
        .footer{
         max-width:75%;
         margin:1rem auto;
-        overflow: auto;
+        overflow: hidden;
         border-top:1px solid black;
+        display:none;
        
     } 
        
@@ -702,16 +555,18 @@ article .bag-btn:hover{
       
      @media(max-width:700px){
          body{
-        background: blue;
+        background: rgb(0, 255, 149);
      } 
-         .mobile-nav{
+         nav.mobile-nav{
           position:sticky;
           left:0px;
           top:0px;
+          z-index: 2;
+          
          }
        
         #main .tabs{
-        display:none;
+        display:block;
         }
         .mobile-cart{
             
@@ -827,70 +682,6 @@ article .bag-btn:hover{
      .openbtn{
          display:block;
      }
-     .slideshow-container {
-        max-width: 100%;
-        position: relative;
-        margin: auto;
-    margin-top:300px;
-    position: relative;
-    
-    }
-    
-    .mySlides {
-        display: none;
-      margin-left: 0px;
-      padding-top:20px;
-      width: 100%;
-    
-    
-      /* border: solid 1px black; */
-         
-    }
-    
-    .text {
-        color: #d47979;
-        font-size: 35px;
-        padding-top: 12px;
-      padding-bottom: 12px;
-        position: absolute;
-        top: 35rem;
-        overflow: hidden;
-        margin: auto;
-        border: 1px solid black;
-        width: 70%;
-        text-align: center;
-        /* background-color: #222428 */
-    }
-    .next {
-        right: 20px;
-        top: 250px;
-        border-radius: 3px 3px 3px 3px
-    }
-    
-    .prev {
-        left: 20px;
-        top: 250px;
-        border-radius: 3px 3px 3px 3px;
-        -webkit-border-radius: 3px 3px 3px 3px;
-        -moz-border-radius: 3px 3px 3px 3px;
-        -ms-border-radius: 3px 3px 3px 3px;
-        -o-border-radius: 3px 3px 3px 3px;
-    }
-    .dot {
-        position: relative;
-         bottom: -60px;
-         cursor: pointer;
-         height: 25px;
-         width: 25px;
-         margin: 0 2px;
-         background-color: rgb(219, 214, 214);
-         border-radius: 50%;
-         display: inline-block;
-         transition: background-color .6s ease
-     }
-     .active, .dot:hover {
-        background-color: #d30e0e
-    }
      .second-tabs{
     
         padding-top: 1rem;
@@ -943,7 +734,7 @@ article .bag-btn:hover{
         
         @media(min-width:687px){
             body{
-                background:purple;
+                background:rgb(211, 111, 64);
             } 
           
             #second-tab-1-content .second-tab-1-content-bottom,
@@ -959,6 +750,10 @@ article .bag-btn:hover{
                justify-content: center  ; 
                text-align: center ;
                 }
+                .mobile-cart{
+                    display:block;
+                }
+               
         }
       
         
@@ -1004,7 +799,7 @@ article .bag-btn:hover{
         }
         @media (max-width: 959px){
              body{
-                background:rgb(0, 255, 76);
+                background:rgb(63, 57, 139);
                } 
                .slideshow-container {
                 max-width: 100%;
@@ -1078,7 +873,7 @@ article .bag-btn:hover{
         }
         @media(min-width:687px){
             body{
-                background:purple;
+                background:red;
             } 
           
             #second-tab-1-content .second-tab-1-content-bottom,
@@ -1093,6 +888,9 @@ article .bag-btn:hover{
                 align-items: center;
                justify-content: center  ; 
                text-align: center ;
+                }
+                nav.mobile-nav .mobile-cart{
+                    display:none;
                 }
         }
       
@@ -1139,7 +937,8 @@ article .bag-btn:hover{
         }
         @media (max-width: 959px){
              body{
-                background:rgb(202, 25, 114);
+                background:rgb(25, 196, 202);
+                
                } 
                .slideshow-container {
                 max-width: 100%;
@@ -1162,6 +961,17 @@ article .bag-btn:hover{
                 font-style: italic ;
                 text-align: center;
             }
+            article.product{
+                width:30rem;
+            }
+            
+            nav.mobile-nav{
+                position:sticky;
+                left:0px;
+                top:0px;
+             
+                
+               }
             
             .mySlides {
                 display: none;
@@ -1187,19 +997,53 @@ article .bag-btn:hover{
                 color: rgb(230, 236, 236);
             
             }
-               #second-tab-1-content .second-tab-1-content-bottom,
-            #second-tab-2-content .second-tab-2-content-bottom,
-            #second-tab-3-content .second-tab-3-content-bottom,
-            #second-tab-4-content .second-tab-4-content-bottom
+               #second-tab-1-content .second-tab-1-content-bottom .product-center ,
+            
+            #second-tab-2-content .second-tab-2-content-bottom .product-center,
+            #second-tab-3-content .second-tab-3-content-bottom .product-center,
+            #second-tab-4-content .second-tab-4-content-bottom .product-center
     
             {
                 display:grid;
-                grid-template-columns:repeat(2, 1fr);
+                grid-template-columns:repeat(1, 1fr);
                 grid-gap  :2rem;
                 align-items: center;
                justify-content: center  ; 
                text-align: center ;
+                 margin-left:50px;
+                 z-index:3;
+
                 }
+     
+                article .bag-btn{
+                    width:80%;
+                    margin:auto;
+                    background-color: black;
+                   border:1px solid rgb(206, 15, 15);
+                   border-radius: 20px;
+                   -webkit-border-radius: 20px;
+                   -moz-border-radius: 20px;
+                   -ms-border-radius: 20px;
+                   -o-border-radius: 20px;
+                   text-align:center;
+            }
+            
+            article .bag-btn:hover{
+                background:rgb(247, 243, 243);
+                color:black;
+            }
+             h3,h4{
+                 font-size:40px;
+             }
+            
+            nav.mobile-nav .mobile-cart{
+                display:block;
+                position: sticky;
+                top:0;
+                right:0;
+                z-index: 2;
+            }
+           
                 #myImg{
                     width:80%;
                 }

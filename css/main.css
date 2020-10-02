@@ -1,12 +1,30 @@
 body {
-  background: #d63737;
+  background: #3f3e3e;
+  color: black;
+}
+
+.logo {
+  width: 7%;
+  position: relative;
+  top: 35px;
+  border-bottom: 2px solid black;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 30px;
+  padding-left: 20px;
+  color: #181717;
 }
 
 h2 {
   text-transform: capitalize;
   font-size: large;
   font-style: italic;
-  border: 1px solid white;
+  border: 1px solid #0e0d0d;
   letter-spacing: 2px;
   width: 50%;
   text-align: center;
@@ -15,18 +33,27 @@ h2 {
   color: #d6c90d;
 }
 
+.our-product {
+  color: white;
+  font-size: 60px;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
 .mobile-logo {
   display: none;
 }
 
 #id {
-  background-color: #6868ee;
+  background-color: white;
+  position: relative;
   /* clip-path:polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0) ; */
   width: 100%;
   overflow: hidden;
   height: 100%;
   position: absolute;
   z-index: -1;
+  top: 0;
 }
 
 #mySidenav {
@@ -251,14 +278,18 @@ h2 {
 }
 
 .text-lg {
-  color: #e3eeee;
+  color: #1f2222;
   font-size: 45px;
 }
 
 .p-tab1 {
-  color: #e2e2ee;
+  color: #1d1d1f;
   text-align: center;
   font-size: 50px;
+}
+
+.p-about {
+  padding-bottom: 180px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -272,7 +303,6 @@ h2 {
 }
 
 .tabs {
-  background: black;
   padding-top: 1rem #f0eaea;
   border-bottom: 3px solid #0e0d0d;
   position: -webkit-sticky;
@@ -280,6 +310,7 @@ h2 {
   top: 0;
   right: 0;
   width: 100%;
+  padding-top: 0;
 }
 
 .container button.tab-border {
@@ -289,12 +320,17 @@ h2 {
 .container button {
   margin-left: 2px;
   width: 10rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   background-color: none;
   outline: none;
   border: none;
   background: none;
-  color: #e6ecec;
+  color: #dfba17;
+}
+
+.container button:hover {
+  background: blue;
+  color: white;
 }
 
 .container {
@@ -315,12 +351,21 @@ ul li {
 }
 
 .p-about {
+  font-size: 20px;
+  font-style: italic;
+  color: black;
+}
+
+.contact-p {
+  padding-bottom: 100px;
+  color: black;
   font-size: 40px;
   font-style: italic;
 }
 
 .skill-btn {
   font-size: 50px;
+  color: black;
 }
 
 /*     */
@@ -432,6 +477,23 @@ ul li {
   margin-top: 600px;
   position: relative;
   width: 100%;
+}
+
+article {
+  border: 2px solid black;
+}
+
+article .bag-btn {
+  border: 1px solid #0e0d0d;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+article .bag-btn:hover {
+  background: black;
 }
 
 .mySlides {
@@ -587,6 +649,7 @@ ul li {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin-left: 100px;
 }
 
 #second-tab-2-content .second-tab-2-content-bottom .product-center {
@@ -602,6 +665,7 @@ ul li {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin-left: 160px;
 }
 
 #second-tab-3-content .second-tab-3-content-bottom .product-center {
@@ -617,6 +681,7 @@ ul li {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin-left: 160px;
 }
 
 #second-tab-4-content .second-tab-4-content-bottom .product-center {
@@ -632,6 +697,7 @@ ul li {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin-left: 160px;
 }
 
 #myImg {
@@ -711,6 +777,13 @@ ul li {
   -o-transform: translateX(0);
 }
 
+.add {
+  background: blue;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
 .close {
   position: absolute;
   top: 15px;
@@ -733,13 +806,14 @@ ul li {
   max-width: 75%;
   margin: 1rem auto;
   overflow: auto;
+  border-top: 1px solid black;
 }
 
 .footer p {
   margin-bottom: 1.5rem;
   font-size: 30px;
   text-align: center;
-  color: white;
+  color: #0a0a0a;
 }
 
 .footer span {
@@ -752,12 +826,36 @@ ul li {
            
           } */
 @media (max-width: 700px) {
-  /* body{
-        background: blue;
-         } */
-  #id {
-    background-color: tomato;
-    top: 0;
+  body {
+    background: blue;
+  }
+  .mobile-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+  }
+  #main .tabs {
+    display: none;
+  }
+  .mobile-cart {
+    position: relative;
+    left: 0px;
+    top: 5px;
+    float: right;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .mobile-logo {
+    width: 10%;
+    position: relative;
+    left: -300px;
+    top: -30px;
+  }
+  .fa-bars {
+    font-size: 30px;
+    padding-left: 20px;
+    color: #181717;
   }
   #mySidenav {
     display: block;
@@ -949,17 +1047,17 @@ ul li {
 }
 
 @media (min-width: 687px) {
-  /* body{
-                background:purple;
-            } */
+  body {
+    background: purple;
+  }
   #second-tab-1-content .second-tab-1-content-bottom,
   #second-tab-2-content .second-tab-2-content-bottom,
   #second-tab-3-content .second-tab-3-content-bottom,
   #second-tab-4-content .second-tab-4-content-bottom {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -972,9 +1070,9 @@ ul li {
 }
 
 @media (max-width: 1276px) {
-  /* body{
-                background:orange;
-               } */
+  body {
+    background: orange;
+  }
   .mobile-logo {
     color: white;
     float: right;
@@ -1015,9 +1113,9 @@ ul li {
 }
 
 @media (max-width: 959px) {
-  /* body{
-                background:blue;
-               } */
+  body {
+    background: #00ff4c;
+  }
   .slideshow-container {
     max-width: 100%;
     position: relative;
@@ -1069,6 +1167,7 @@ ul li {
     max-width: 75%;
     margin: 1rem auto;
     overflow: auto;
+    color: black;
   }
   .footer p {
     margin-bottom: 1.5rem;
@@ -1083,9 +1182,9 @@ ul li {
 }
 
 @media (min-width: 687px) {
-  /* body{
-                background:purple;
-            } */
+  body {
+    background: purple;
+  }
   #second-tab-1-content .second-tab-1-content-bottom,
   #second-tab-2-content .second-tab-2-content-bottom,
   #second-tab-3-content .second-tab-3-content-bottom,
@@ -1106,9 +1205,9 @@ ul li {
 }
 
 @media (max-width: 1276px) {
-  /* body{
-                background:orange;
-               } */
+  body {
+    background: orange;
+  }
   .mobile-logo {
     color: white;
     float: right;
@@ -1149,15 +1248,28 @@ ul li {
 }
 
 @media (max-width: 959px) {
-  /* body{
-                background:blue;
-               } */
+  body {
+    background: #ca1972;
+  }
   .slideshow-container {
     max-width: 100%;
     position: relative;
     margin: auto;
     margin-top: 300px;
     position: relative;
+  }
+  .homepageimg {
+    width: 100%;
+  }
+  .second-tabs {
+    width: 100%;
+  }
+  .our-product {
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-style: italic;
+    text-align: center;
   }
   .mySlides {
     display: none;
@@ -1185,8 +1297,8 @@ ul li {
   #second-tab-4-content .second-tab-4-content-bottom {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     -webkit-box-align: center;
         -ms-flex-align: center;

@@ -102,7 +102,7 @@ class UI{
               <button class="bag-btn" data-id=${product.id}>add to cart</button>
           </div>
           <h3>${product.title}</h3>
-          <h4>$  {product.price}</h4>
+          <h4>${product.price}</h4>
         </article `
       });
  productsDOM.innerHTML = result;
@@ -155,6 +155,7 @@ setcartvalues(cart){
   });
   carttotal.innerText = parseFloat(temptotal.toFixed(2));
   cartitems.innerText = itemtotal;
+  cartitems.innerText = itemtotal;
   // console.log(carttotal, cartitems);
 }
 addcartitem(item){
@@ -163,7 +164,7 @@ addcartitem(item){
   div.innerHTML = `<img src=${item.image} alt="" class="product-img">
   <div>
       <h4>${item.title}</h4>
-      <h5>${item.price}</h5>
+      <h5>$${item.price}</h5>
       <span class="remove-item" data-id=${item.id}>remove</span>
   </div>
   <div>
