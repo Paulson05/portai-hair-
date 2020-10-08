@@ -18,7 +18,7 @@ nav.mobile-nav .mobile-cart{
 .fa-bars{
     font-size:30px;
     padding-left: 20px;
-    color:rgb(24, 23, 23);
+    color:rgb(240, 235, 235);
 }
     h2{
         text-transform: capitalize;
@@ -40,7 +40,7 @@ nav.mobile-nav .mobile-cart{
     }
    
         #id{
-            background-color: white;
+          
             position: relative;
 
             /* clip-path:polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0) ; */
@@ -104,6 +104,8 @@ nav.mobile-nav .mobile-cart{
     .openbtn{
         display:none;
         cursor: pointer;
+       
+       
     }
     
     /* Position and style the close button (top right corner) */
@@ -809,7 +811,9 @@ article .bag-btn:hover{
             position: relative;
             
             }
-            
+            span.openbtn{
+                width:20%;
+            }
             .mySlides {
                 display: none;
               margin-left: 0px;
@@ -937,7 +941,7 @@ article .bag-btn:hover{
         }
         @media (max-width: 959px){
              body{
-                background:rgb(25, 196, 202);
+                background:rgb(78, 25, 202);
                 
                } 
                .slideshow-container {
@@ -947,6 +951,18 @@ article .bag-btn:hover{
             margin-top:300px;
             position: relative;
             
+            }
+            .fa-bars{
+                font-size:30px;
+                padding-left: 20px;
+                color:rgb(240, 235, 235);
+            }
+            #main .tabs {
+                display:block;
+            }
+            #main .tabs .cart-btn{
+                float:right;
+                z-index: -3;
             }
             .homepageimg{
                 width:100%;
